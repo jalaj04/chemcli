@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemcli"
+version = "0.1.0"
+description = "A terminal periodic table lookup and molar mass calculator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies=["rich>13.0.0"]
+
+[project.scripts]
+chemcli="chemcli.main:main"
+[tool.setuptools.package-data]
+chemcli=["elements.json"]

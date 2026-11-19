@@ -97,7 +97,7 @@ def display_molar_mass(formula, total_mass, breakdown):
     for item in breakdown:
         table.add_row(
             f"{item["name"]} ({item["symbol"]})",
-            str({item["count"]}),
+            str(item["count"]),
             f"{item["atomic_mass"]:.3f}",
             f"{item["subtotal"]:.3f}",
             f"{item["percent"]:.2f}%"
